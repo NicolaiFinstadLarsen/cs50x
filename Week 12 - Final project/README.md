@@ -11,5 +11,10 @@ I then found the sentece in on the project page
 >Strive to create something that outlives this course.
 
 So that was what I wanted to do. I thought about what I acctually would want to use in the future, some project that, even though, I have delivered it in this course, I could keep working on for a long time.
+I wanted to make something that I would really use if it was good enough.
 
+At work I always copy and paste alot. There is a lot of copying to be done in the job description. So I figured I should make an copy and past thing. 
+That was as far as I had come with my thought when I was sure of what to make.
+
+** I knew what I had to do **
 
