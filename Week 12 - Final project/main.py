@@ -35,13 +35,15 @@ Debugging code
 # Initialize the tkinter window as root
 root = tk.Tk()
 
-
 # Set the window size and title
 root.geometry("300x400")
-root.title("Co.PY")
+root.title("co.PY")
+
+img = tk.PhotoImage(file="CS50.png")
+root.iconphoto(False, img)
 
 # Making label for window
-label = tk.Label(root, text="Co.PY \n Copy & paste like a god", font=("Arial", 12), pady=10)
+label = tk.Label(root, text="co.PY \n Copy & paste like a god", font=("Arial", 12), pady=10)
 label.pack()
 
 
