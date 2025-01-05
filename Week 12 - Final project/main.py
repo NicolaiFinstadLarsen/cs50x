@@ -35,14 +35,36 @@ Debugging code
 # Initialize the tkinter window as root
 root = tk.Tk()
 
-
 # Set the window size and title
 root.geometry("300x400")
 root.title("Co.PY")
 
+#Mainframe
+mainframe = tk.Frame(root)
+mainframe.pack(fill="both", expand=True)
+
 # Making label for window
-label = tk.Label(root, text="Co.PY \n Copy & paste like a god", font=("Arial", 12), pady=10)
+label = tk.Label(mainframe, text="Co.PY \n Copy & paste like a god", font=("Arial", 12))
 label.pack()
+
+# Initializeing a canvas to make possible a scrollbar
+my_canvas = tk.Canvas(mainframe)
+my_canvas.pack(side="left", fill="both", expand=True)
+
+
+# Making a scrollbar
+my_scrollbar = tk.Scrollbar(root, orient="vertical", command=my_canvas.yview)
+my_scrollbar.pack(side="right", fill="y")
+
+# Configuring the canvas
+my_canvas.configure(yscrollcommand=my_scrollbar.set)
+my_canvas.bind("<Configure>", lambda e: my_canvas.configure(scrollregion=my_canvas.bbox("all")))
+
+# Making a frame inside the canvas
+second_frame = tk.Frame(my_canvas)
+
+#Adding the new fram to a window in canvas
+my_canvas.create_window((0,0), window=second_frame, anchor="nw")
 
 
 # Function for copied text with insert to database functionality
@@ -105,7 +127,7 @@ def make_textbox():
 
             # Making a new textbox for each row in database table. 
             # Inserting text variable for each box.
-            textbox = tk.Text(root, height=2, width=30, padx=10)
+            textbox = tk.Text(second_frame, height=2, width=30, padx=10)
             textbox.pack()
             textbox.delete("1.0", "end")
             textbox.insert("1.0", text)
