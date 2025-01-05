@@ -48,6 +48,7 @@ label.pack()
 # Function for copied text with insert to database functionality
 def copy_to_clipboard():
     try:
+        # Sleep function only way to update clipboard in time
         time.sleep(0.1)
         selected_text = pyperclip.paste()
         # print(type(selected_text))
