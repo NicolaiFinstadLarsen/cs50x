@@ -1,0 +1,18 @@
+SELECT AVG(energy), AVG(danceability), AVG(valence) FROM songs;
+Avg energy = 0.65906
+Avg danceability = 0.71646
+Avg Valence = 0.48443
+
+SELECT AVG((energy + danceability + valence) / 3.0) AS avg FROM songs;
+Tot Avg = 0.6199876
+
+If this was a listeners top 100 songs. I would characterize them as a dancer with lots of enery.
+
+
+
+
+
+There are some issues I can propose with the solution.
+1. There is not use of the tempo colum. This would be usefull if the dancing song would actually be used for dancing.
+2. People are not monotone. They listen to different music all the time. There should be some accounting for time played. Maybe a weighted avg would work better.
+3. There are noe genres of music in the table. This would also be beneficial to the analysis.

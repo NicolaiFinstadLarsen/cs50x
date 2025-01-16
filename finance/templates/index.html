@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index - Overview
+{% endblock %}
+
+{% block main %}
+    <table class ="table table-stripped"> <!-- Sjekke denne i bootstrap-->
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>Shares</th>
+            <th>Cost</th>
+            <th>Cash</th>
+            <th>Total assets including cash</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for row in portfolio %}
+            <tr>
+                <td>{{ row.symbol_lookup.name }}</td>
+                <td>{{ row.symbol_lookup.symbol }}</td>
+                <td>{{ row.symbol_lookup.price }}</td>
+                <td>{{ row.shares }}</td>
+                <td>{{ row.cost }}</td>
+            </tr>
+        {% endfor %}
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ cash }}</td>
+                <td>{{ total_assets }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
+
+
+Stock
+number of shares
+current price of stock
+total value of each holding
+current cash, grand total (all assets grouped)

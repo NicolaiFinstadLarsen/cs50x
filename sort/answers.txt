@@ -1,0 +1,16 @@
+sort1 uses: Bubblesort.
+
+How do you know?: Its pretty fast up to the 50.000 line text file. But when we compare it to the sort 3 function for the sorted 50.000 line listm,
+We see that the runtime is closed to the O(n) that it can run if optimal lists are provided.
+
+sort2 uses: Mergesort.
+
+How do you know?: Since merge sort does have the fastest runtime of O(n log n) and we see the fastest runtime overall from this sort function this is a fair assumption.
+The nail in the coffin is the 50.000 line tests. Where sort 1 and 3 seconds and sort 2 uses milliseconds.
+
+sort3 uses: Selectionsort.
+
+How do you know?: The random, reversed and sorted times for all len is similar. Meaning that there is no way for the sort function to check if the list is already sorted.
+This means that the algorithem is itterating over the full ith length even if the list is sorted and this is therfor selection sort.
+Selection sort has what is called theta O(n**) runtime.
+

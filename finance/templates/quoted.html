@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <table class ="table table-stripped"> <!-- Sjekke denne i bootstrap-->
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Symbol</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ symbol_lookup.name }}</td>
+                <td>{{ formated_price }}</td>
+                <td>{{ symbol_lookup.symbol }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

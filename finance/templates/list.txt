@@ -1,0 +1,35 @@
+user_id, symbol, price, shares, sell/buy, amount
+
+user_id NUMBER, symbol TEXT, price NUMBER, shares NUMBER, sell_buy TEXT, amount NUMBER);
+
+
+
+ALTER TABLE table_name
+ADD column_name datatype;
+
+legge til selge eller kjøpe i portfolio table?
+Nei legge til i history table fra sell og buy func
+
+hmm lagt til i sell og buy fun men kommer ikke inn i tables history?
+
+
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+AUTO_INCREMENT;
+
+CREATE TABLE history (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+user_id INTEGER,
+symbol TEXT,
+price INTEGER,
+shares INTEGER,
+sell_buy TEXT,
+amount INTEGER);
+
+
+        ticker = row["symbol"]
+        row["symbol_lookup"] = lookup(ticker)
+        row["symbol_lookup"]["price"]
+        row["shares"]
+        row["sell_buy"]
+        row["amount"]

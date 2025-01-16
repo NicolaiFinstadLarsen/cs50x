@@ -1,0 +1,30 @@
+Which lists the:
+10 HTML tags used:
+<html> because ofcourse
+<meta> used for dynamic viewport thru RWD(responsive web design)
+<head> Used for link to bootstrap, website title and RWD
+<link> used for bootstrap and css relationships
+<script> used for javascript relationships
+<body> used for all body elements of webpage
+<h1> For my headline text
+<h2> Used for slightly smaller subheadline text
+<p> For paragraphs in text
+<img> For images
+<a> For the link buttons in the dropdown menu
+
+
+
+5 CSS properties used:
+    color: #25d115;
+    font-family: "Lucida Console", sans-serif;
+    text-align: center;
+    text-shadow: 30px 10px 5px #053d00;
+    background-color: black;
+    font-weight: bolder;
+    overflow-y: auto; //For the text container to scroll down when the collatz conjecture turns to long.
+    text-decoration: underline;
+
+
+As well as a brief (one-sentence) description of how you chose to use JavaScript and Bootstrap.
+I used javascript to activate my dropdown button. I also converted my pythonscript of the 3x+1 conjecture into javascript.
+I used bootstrap for containers everywhere for allignment, I also used bootstrap for the carousell and the grid for tictactoe text.

@@ -1,0 +1,5 @@
+cs50 import SQL
+tkinter as tk
+pyperclip
+keyboard
+time

@@ -1,0 +1,19 @@
+Notes
+
+Time use
+
+random 5.000    reversed 5.000      sorted 5.000
+sort1: 0,066    0,079               0,077
+sort2: 0,034    0,032               0,036
+sort3: 0,045    0,056               0,059
+
+random 10.000   reversed 10.000     sorted 10.000
+sort1: 0,200    0,235               0,078
+sort2: 0,144    0,061               0,077
+sort3: 0,134    0,134               0,132
+
+random 50.000   reversed 50.000     sorted 50.000
+sort1: 5,513    4,856               0,417
+sort2: 0,462    0,386               0,379
+sort3: 2,177    2,363               2,136
+
